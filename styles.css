@@ -1,0 +1,81 @@
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*Added font-family for the entire site using the html element to choose a more modern-looking font*/
+h1{
+    text-align: center;
+}
+/*Added center-alignment for h1 headings on all pages*/
+Body{
+    border: 5rem;
+    margin: 1rem;
+}
+/*Made body for all pages border 5rem and margin 1rem to align correctly.*/
+.fireworks {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.woman {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Phone {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Added image characteristics in order to center the images where each image has a class, adding block-oriented display and setting the margins for left and right to "auto".*/
+Footer {
+    background-color: rgb(62, 70, 116);;
+}
+Footer a{
+    color: white;
+    text-decoration: none;
+    padding: 2rem;
+}
+Footer ul{
+    list-style-type: none;
+    display: flex;
+}
+/*Set up footer so that the links have no underlining and are colored white, with a footer background layout of a purple color.*/
+#Index{
+    background-color: rgba(10, 73, 21, 0.575)
+}
+#Index form figcaption{
+    font-size: small;
+    flex-wrap: wrap;
+}
+#Contact{
+    background-color: rgba(135, 111, 138, 0.507);
+}
+#About{
+    background-color: rgb(0,0,0);
+    color: white;
+}
+/*Gave each page's body an ID and changed characteristics for each to set background color, adjust color for the "About" page to white, and created a figure caption for the
+form element. Made the caption small and wrap under the form in order to provide the user instructions on what to do and what to expect (once I have figured out how to provide
+feedback to the user.*/
+tbody tr:hover{
+    background-color: darkblue;
+    color: white;
+}
+/*Made the table so that when the table rows are hovered over, they turn a dark blue.*/
+table {
+    border-style: dashed;
+    width: 100%;
+    border-color: black
+}
+th, td{
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+/*Table border setup both outside of the table (dashed black line) and solid lines within the table for each row.*/
+@media only screen and (max-width: 500px) {
+    html {
+        margin: 0rem;
+        font-size: x-small;
+    }
+}
+/*Made a media query to allow the site to be more viewer-friendly when the size is made smaller, to a max-width of 500px.*/
